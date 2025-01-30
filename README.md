@@ -18,7 +18,8 @@ To install the Nex programming language, follow the steps below:
 
 #### Download the Installer
 
-   Visit the official website to download the latest version of the Nex programming language: [webiste]("https://stalin-143.github.io/Nex/")
+   Visit the official website to download the latest version of the Nex programming language: [website](https://stalin-143.github.io/Nex/)
+
 
 ### Download Nex
 
@@ -34,50 +35,58 @@ Run Nex:
 
     $ ./nex
 
-Syntax Example
+## Syntax Example
 
 Here’s a quick example of a basic Nex program:
 
-// Hello World Program in Nex
+    // Hello World Program in Nex
 
-func main() {
-    print("Hello, World!")
-}
+    func main() {
+      print("Hello, World!")
+    }
 
-Variables
+##Variables
 
-let num = 10
-let str = "Hello, Nex!"
+    let num = 10
+    let str = "Hello, Nex!"
 
-Functions
+## Functions
 
-func add(a, b) {
+    func add(a, b) {
     return a + b
-}
+    }
 
-let sum = add(5, 3)
-print(sum)  // Output: 8
+    let sum = add(5, 3)
+    print(sum)  // Output: 8
 
-Conditionals
+## Conditionals
 
-if num > 5 {
-    print("Number is greater than 5")
-} else {
-    print("Number is less than or equal to 5")
-}
+     num > 5 {
+       print("Number is greater than 5")
+    } else {
+        print("Number is less than or equal to 5")
+    }
 
-Loops
+## Loops
 
-for i in 0..5 {
-    print(i)
-}
+    for i in 0..5 {
+        print(i)
+    }
 
-Documentation
+## Documentation
 
-You can find the full documentation for Nex on our website: https://nex-lang.org/docs.
-Contributing
+You can find the full documentation for Nex on our website: [website](https://stalin-143.github.io/Nex/)
+
+ ## Contributing
 
 We welcome contributions! If you'd like to contribute to the Nex programming language, please fork the repository and create a pull request. Ensure that you follow the code style guidelines and include tests for any new features or fixes.
-License
+
+## License
 
 Nex is released under the MIT License. See the LICENSE file for more details.
+
+
+
+ ## 💰 You can help me by Donating
+ 
+  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/stalin143) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/stalinS143)
