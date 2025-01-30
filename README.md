@@ -18,7 +18,7 @@ To install the Nex programming language, follow the steps below:
 
 #### Download the Installer
 
-   Visit the official website to download the latest version of the Nex programming language: (webiste)["https://stalin-143.github.io/Nex/"]
+   Visit the official website to download the latest version of the Nex programming language: [webiste]("https://stalin-143.github.io/Nex/")
 
 ### Download Nex
 
