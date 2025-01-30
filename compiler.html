@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Nex Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Nex Compiler</h1>
+        <div class="input-section">
+            <label for="code-input">Write your code:</label>
+            <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+
+            <label for="user-input">Enter input for ullitu:</label>
+            <input type="text" id="user-input" placeholder="Enter input for ullitu()">
+
+            <button onclick="runCode()">Run Code</button>
+        </div>
+
+        <div id="output-container" class="output-section">
+            <h2>Output</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nex Programming Language</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to Nex</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#examples">Examples</a>
+                <a href="#get-started">Get Started</a>
+                <a href="compiler.html">Online Compiler</a>
+                <a href="#support">Support</a>
+            </nav>
+            <div class="auth-area">
+                <div id="user-profile" style="display: none;">
+                    <span id="user-display-name"></span>
+                    <button id="logout-button">Logout</button>
+                </div>
+                <div id="login-area" style="display: block;">
+                    <button id="login-button">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Nex</h2>
+            <p>
+                Nex is a lightweight, beginner-friendly programming language designed for ease of use while maintaining flexibility.
+                It simplifies coding with an intuitive syntax, making it ideal for new programmers, students, and developers looking for a
+                straightforward way to write and execute code. Nex aims to provide a smooth learning curve, allowing users to quickly grasp
+                programming concepts and build applications efficiently.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+             <p>Nex is packed with features that make it a powerful and versatile language:</p>
+            <ul>
+                <li>Fast compilation for quick execution</li>
+                <li>Strong static typing to catch errors early</li>
+                 <li>Built-in concurrency support for parallel processing</li>
+                <li>Easy to learn syntax that is both readable and concise</li>
+                <li>Cross-platform compatibility, allowing you to run your code anywhere</li>
+                <li>Automatic memory management to prevent common programming errors</li>
+                <li>A rich standard library to handle common tasks</li>
+            </ul>
+        </section>
+
+         <section id="examples">
+            <h2>Code Examples</h2>
+            <div class="code-example">
+                <h3>Basic Print Statement</h3>
+                <pre><code>accu("Hello, World!")</code></pre>
+                <p>This will print "Hello, World!" to the console.</p>
+            </div>
+             <div class="code-example">
+                <h3>User Input</h3>
+                <pre><code>name = ullitu("Enter your name")
+accu("Hello, " + name + "!")</code></pre>
+                 <p>This will prompt the user to enter their name and then print a personalized greeting.</p>
+            </div>
+             <div class="code-example">
+                <h3>For Loop</h3>
+                <pre><code>for i in range(5):
+    accu("Number: " + str(i))</code></pre>
+                 <p>This will print numbers from 0 to 4 using a for loop.</p>
+            </div>
+             <div class="code-example">
+                <h3>Conditional Statement</h3>
+                <pre><code>x = 10
+if x > 5:
+    accu("x is greater than 5")
+else:
+    accu("x is not greater than 5")</code></pre>
+                 <p>This will demonstrate a simple if-else conditional statement.</p>
+            </div>
+             <div class="code-example">
+                <h3>Function Definition</h3>
+                <pre><code>def add(a, b):
+    return a + b
+
+result = add(5, 3)
+accu("Result: " + str(result))</code></pre>
+                 <p>This will define a function and call it to add two numbers.</p>
+            </div>
+        </section>
+
+        <section id="get-started">
+            <h2>Get Started with Nex</h2>
+            <p>Ready to start coding with Nex? Download the compiler and explore the possibilities!</p>
+            <a href="download.html" class="button" target="_blank">Download Compiler</a>
+        </section>
+        
+         <section id="support">
+            <h2>Support & Development</h2>
+             <p>Nex is currently under active development. We appreciate your interest and support as we continue to improve the language.</p>
+            <p>For any questions, feedback, or to report issues, please join our Discord community:</p>
+             <a href="https://discord.gg/UspQbUy6TW" class="button" target="_blank">Join Discord</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nex Programming Language</p>
+         <div class="donate-buttons">
+            <a href="https://buymeacoffee.com/stalin143" target="_blank">
+                <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+            </a>
+            <a href="https://paypal.me/stalinS143" target="_blank">
+                <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal" />
+            </a>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="login-close">&times;</span>
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <p id="login-error" class="error-message" style="display: none;">Incorrect email or password.</p>
+            <button id="login-submit">Login</button>
+            <p>
+                <a href="#" id="forgot-password-link">Forgot Password?</a>
+                <br>
+                <a href="#" id="signup-link">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="signup-close">&times;</span>
+            <h2>Sign Up</h2>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+             <p id="signup-error" class="error-message" style="display: none;">Signup failed. Please try again.</p>
+            <button id="signup-submit">Sign Up</button>
+            <p>
+                <a href="#" id="login-link-from-signup">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="forgot-password-close">&times;</span>
+            <h2>Forgot Password</h2>
+            <input type="email" id="forgot-password-email" placeholder="Email" required>
+             <p id="forgot-password-error" class="error-message" style="display: none;">Failed to send password reset email. Please try again.</p>
+            <button id="forgot-password-submit">Reset Password</button>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+</body>
+</html>
